@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="main">
+        <div class="day">
+            <legend class="heading day"><small>DAY</small></legend>
+            <input type="number" class='inp'id="day" placeholder="DD"/>  
+            <div class="error-message req"><small>This field is required</small></div>
+            <div class="error-message valid day"><small>Must be a valid date</small></div>
+        </div>
+        <div class="month">
+            <legend class="heading month"><small>MONTH</small></legend>
+            <input type="number"  class='inp' id="month" placeholder="MM"/>
+            <div class="error-message req"><small>This field is required</small></div>
+            <div class="error-message valid month"><small>Must be a valid month</small></div>
+        </div>
+        <div class="year">
+            <legend class="heading year"><small>YEAR</small></legend>
+            <input type="number"  class='inp' id="year" placeholder="YYYY"/>
+            <div class="error-message req"><small>This field is required</small></div>
+            <div class="error-message valid year"><small>Must be valid year</small></div>
+        </div>
+
+    </div>
+     
+     <div class="cut">
+      <hr>
+      <img class='arrow' src="assets/images/icon-arrow.svg" onclick="calculateAge()">
+    </div>
+
+    <div class="calculate">
+      <p><span class="ans yearRes">--</span> years</p>
+      <p><span class="ans monthRes">--</span> months</p>
+      <p><span class="ans dayRes">--</span> days</p>
+    </div>
+    
+    
+  </div>
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Indhumathi</a>.
+  </div>
+</body>
+</html>
